@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <title>{% block title %}{% endblock title %}</title>
+		<meta charset="UTF-8" />
+		<link rel="icon" href="{{url_for('static', filename='imagens/logo.png') }}"/>
+		<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css.css') }}">
+
+
+	</head>
+	<body>
+		<div id = "menu">
+			<div id = "cabecalho">
+				<img src = "static/imagens/logo.png" style = " width: 145px;height:90px; cursor:crosshair; "/>
+			</div>
+			<div id = "cabecalho_2 "  >
+					<nav class = "menu">
+						<ul>
+							<li style = "margin-top:8px; cursor:crosshair;"> <a href = "/index" class="fill-div"> <span style="cursor:crosshair;"> Home </span> </a>
+								<ul>
+								</ul> 
+							</li>
+							<li style = "margin-top:8px; cursor:crosshair;"> <span style="cursor:crosshair;"> Projetos </span>
+								<ul>
+										<li style=" width:100%;"><a href = "/nivel_1"class="fill-div"> <span style="cursor:crosshair;"> nível 1 </span> </a> </li><br/>
+										<li style=" width:100%;"><a href = "/nivel_2"class="fill-div"> <span style="cursor:crosshair;"> nível 2 </span> </a> </li><br/>
+										<li style=" width:100%;"><a href = "/nivel_3"class="fill-div"> <span style="cursor:crosshair;"> nível 3 </span> </a> </li><br/>								</ul> 
+							</li>
+							<li style = "margin-top:8px; cursor:help"> <a href = "/login"class="fill-div"> <span style="cursor:crosshair;"> Login <span> </a> </li>
+						</ul>
+
+					</nav>
+			</div>
+			
+        </div>
+
+        {% block content %}    
+        {% endblock content %}
+
+        <div align="center" id = "footer" >
+			<div align="center" id="footer">
+				<div align="left" id="table_footer">
+					
+					<table >
+						<div align="center" style="width:50%; height:auto;">sigam nos:</div>
+						<tr><th><a style="color:white;" href="https://www.facebook.com/"><img src = "static/imagens/icons8-facebook-480.png" style = "width:40px; height:40px;" />facebook</a></th></tr>
+						<tr><th><a style="color:white;" href="https://www.youtube.com/"><img  src = "static/imagens/icons8-play-button-480.png" style = "width:40px; height:40px;" />Youtube</a></th></tr>
+						<tr><th><a style="color:white;" href="https://www.instagram.com/"><img  src = "static/imagens/icons8-instagram-480.png" style = "width:40px; height:40px;" />Instagram</a></th></tr>
+						<tr><th><a style="color:white;" href="https://www.twitter.com/"><img  src = "static/imagens/icons8-twitter-480.png" style = "width:40px; height:40px;" />Twitter</a></th></tr>
+					</table>
+				</div>
+				<div align="right" id = "img3">
+					<div id="intin">
+						<img src = "static/imagens/logo.png" style = "width: 200px;height:200px"/>
+					</div>
+					<div align="center" id="intintin">
+							<p><span style="color:#b1cdcd;"><b>Desenvouvedores:</b></span></p>
+							<p style="color:#8080ff;"><i>Daniel Pereira da $ilva</i></p>
+							<p style="color:#8080ff;"><i>Geislane Oliveira</i></p>
+							<p ><span style="color:#b1cdcd;"><b>Orientador:</b></span></p>
+							<p style="color:#8080ff;"><i>prof.Antônio</i></p>
+						
+					</div>
+				</div>
+			</div>
+            <div align="center">©2019-Instituto Federal Baiano <i>Campus</i> Guanambi</div>
+		</div>
+
+	</body>
+
+</html>

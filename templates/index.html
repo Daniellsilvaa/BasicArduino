@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% block title %}
+   Basic Arduino
+{% endblock title %}
+{% block content %}
+
+		<div id = "corpo1">
+		<h1>Basic Arduino</h1>
+		</div>
+		<div class="conteiner">
+			<div align="center" id = "corpo2">
+				<div align="center" id = "texto">
+					<p>O intuito do Basic Arduino é proporcionar conhecimento basico sobre a prototipagem com arduino, de forma
+					rapida e divertida com conteudos práticos e teóricos, de maneira que você consiga 
+					aplicar os mesmos sem dificuldade. O modelo de arduino que será utilizado o arduino-UNO-R3 que é
+					um dos mais populares e acessíveis do gênero.</p>
+					<p>Se você se interessou <a href="/cadastro">cadastre-se</a> e tenha acesso à todo conteúdo.</p>
+					
+				</div>
+				<div align="right" id = "imagem">
+					<img src = "static/imagens/desenho_ardu.png" alt = "Imagem" id = "img2"/>
+				</div>
+			</div>
+			<div id="aside">
+                <h3 align="center">O que é arduino ?</h3>
+				<div id="img_aside" align="center">
+					<img src = "static/imagens/download.jpg" style = "width:200px; height:150px;" />
+				</div>
+				<p  id="styletext">Arduino é uma plataforma de prototipagem eletrônica de hardware livre e de placa única,
+					projetada com um microcontrolador Atmel AVR com suporte de entrada/saída embutido, uma
+					linguagem de programação padrão, a qual tem origem em Wiring, e é essencialmente C/C++.
+				</p>
+			</div>
+		</div>
+		
+{% endblock content %}

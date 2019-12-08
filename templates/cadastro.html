@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% block title %}
+   Cadastro
+{% endblock title %}
+{% block content %}
+  <div align="center">
+    <form action="" method="POST">
+        <div id="bodyform" align="center">
+            <h2>Cadastro</h2>
+
+            {{form.csrf_token}}
+            {{ form.hidden_tag() }}
+            <nav>
+              {{form.nome.label}}
+              {{form.nome(class_="imputlogin")}}
+            </nav>
+            <nav>
+              {{form.email.label}}
+              {{form.email(class_="imputlogin")}}
+            </nav>
+            <nav>
+              {{form.senha.label}}
+              {{form.senha(class_="imputlogin")}}
+            </nav>
+            <nav>
+              {{form.repetir.label}}
+              {{form.repetir(class_="imputlogin")}}
+            </nav>
+            <button type="submit"> Cadastrar</button>
+
+        </div>
+            
+    </form>
+    </div>
+{% endblock content %}
